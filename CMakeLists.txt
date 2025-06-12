@@ -10,7 +10,7 @@ find_package(sensor_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dummy.msg"            # add .msg files if any
   "srv/Query.srv"
-  "srv/UpdateTrackString.srv"
+  "srv/UpdateTrackedObject.srv"
   "action/DualArm.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 

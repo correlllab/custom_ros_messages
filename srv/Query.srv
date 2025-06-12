@@ -1,3 +1,6 @@
 string query
 ---
 sensor_msgs/PointCloud2 cloud
+float32 score
+bool result
+string message
