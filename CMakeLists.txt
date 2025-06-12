@@ -11,7 +11,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dummy.msg"            # add .msg files if any
   "srv/Query.srv"
   "srv/UpdateTrackString.srv"
-  DEPENDENCIES std_msgs sensor_msgs
+  "action/DualArm.action"
+  DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 
 )
 
