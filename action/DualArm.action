@@ -6,5 +6,7 @@ geometry_msgs/Pose right_target
 bool success
 ---
 # Feedback
-float32 left_error
-float32 right_error
+float32 left_error_linear
+float32 left_error_angular
+float32 right_error_linear
+float32 right_error_angular
