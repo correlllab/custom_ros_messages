@@ -11,9 +11,15 @@ find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dummy.msg"            # add .msg files if any
+  "msg/MotorCmd.msg"
+  "msg/MotorCmds.msg"
+  "msg/MotorState.msg"
+  "msg/MotorStates.msg"
   "srv/Query.srv"
   "srv/UpdateTrackedObject.srv"
+  "srv/SetHandAngles.srv"
   "action/DualArm.action"
+  "action/HandAdaptiveForce.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 
 )
