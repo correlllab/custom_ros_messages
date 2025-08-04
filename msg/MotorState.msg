@@ -5,3 +5,4 @@ float64 ddq
 float64 tau
 float64 tau_lim
 float64 current
+float64 temperature
