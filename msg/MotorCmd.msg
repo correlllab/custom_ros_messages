@@ -4,3 +4,7 @@ float64 dq
 float64 ddq
 float64 tau
 float64 tau_lim
+float64 q_raw
+float64 dq_raw
+float64 tau_raw
+float64 tau_lim_raw
