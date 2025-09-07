@@ -1,0 +1,8 @@
+# Goal
+string keyword   # e.g. "home", "ready", "stow"
+---
+# Result
+bool success
+---
+# Feedback
+float32 progress  # 0.0 → 1.0
