@@ -1,0 +1,6 @@
+# SetHandtAngles.srv
+float64[6] angles
+string hand # left, right, both
+---
+bool success
+string message

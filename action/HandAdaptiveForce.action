@@ -1,0 +1,14 @@
+# Goal
+int32[6] target_forces
+int32[6] target_angles
+int32 step_size
+int32 max_iterations
+---
+# Result
+bool success
+int32[6] final_forces
+int32[6] final_angles
+---
+# Feedback
+int32[6] forces
+int32[6] angles

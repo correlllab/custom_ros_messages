@@ -1,0 +1,12 @@
+int32 mode
+float64 q
+float64 dq
+float64 ddq
+float64 tau
+float64 tau_lim
+float64 current
+float64 temperature
+float64 q_raw
+float64 dq_raw
+float64 tau_raw
+float64 tau_lim_raw
