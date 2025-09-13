@@ -16,8 +16,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorState.msg"
   "msg/MotorStates.msg"
   "srv/Query.srv"
+  "srv/ResetBeliefs.srv"
   "srv/UpdateTrackedObject.srv"
   "srv/SetHandAngles.srv"
+  "srv/UpdateBeliefs.srv"
   "action/DualArm.action"
   "action/HandAdaptiveForce.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs

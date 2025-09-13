@@ -1,5 +1,5 @@
 # Request: The name of the camera to perform an action on.
-string camera_name
+string camera_name_space
 ---
 # Response: A message indicating the result and a success flag.
 string message
