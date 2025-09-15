@@ -1,5 +1,6 @@
 string query
 float32 confidence_threshold
+string pc_name
 ---
 sensor_msgs/PointCloud2[] clouds
 string[] names
