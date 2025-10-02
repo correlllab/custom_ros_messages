@@ -1,7 +1,8 @@
-# Goal
-geometry_msgs/Pose left_target
-geometry_msgs/Pose right_target
+# Goal in SE(3)
+float64[16] left_target
+float64[16] right_target
 string keyword
+uint8 duration
 ---
 # Result
 bool success
