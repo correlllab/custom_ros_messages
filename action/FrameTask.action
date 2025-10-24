@@ -1,0 +1,12 @@
+# Goal
+string[] frame_names
+geometry_msgs/Pose[] frame_targets
+string keyword
+builtin_interfaces/Duration duration
+---
+# Result
+bool success
+---
+# Feedback
+float32[] error_linear
+float32[] error_angular
