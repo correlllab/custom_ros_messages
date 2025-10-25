@@ -8,5 +8,5 @@ builtin_interfaces/Duration duration
 bool success
 ---
 # Feedback
-float32[] error_linear
-float32[] error_angular
+float32[] errors_linear
+float32[] errors_angular
