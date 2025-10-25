@@ -15,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorCmds.msg"
   "msg/MotorState.msg"
   "msg/MotorStates.msg"
+  "msg/StringArray.msg"
   "srv/Query.srv"
   "srv/ResetBeliefs.srv"
   "srv/UpdateTrackedObject.srv"
