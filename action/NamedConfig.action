@@ -1,0 +1,10 @@
+# Goal
+string keyword
+builtin_interfaces/Duration duration
+---
+# Result
+bool success
+---
+# Feedback
+float32 error_linear
+float32 error_angular
