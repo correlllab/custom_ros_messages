@@ -1,9 +1,9 @@
 # Goal
-string keyword
+string config_name
 builtin_interfaces/Duration duration
 ---
 # Result
 bool success
 ---
 # Feedback
-float32 max_joint_error
+float32 joint_error
