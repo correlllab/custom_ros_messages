@@ -6,5 +6,4 @@ builtin_interfaces/Duration duration
 bool success
 ---
 # Feedback
-float32 error_linear
-float32 error_angular
+float32 max_joint_error
