@@ -23,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UpdateBeliefs.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
+  "action/NamedConfig.action"
   "action/HandAdaptiveForce.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 )
