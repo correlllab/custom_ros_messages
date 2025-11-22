@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UpdateTrackedObject.srv"
   "srv/SetHandAngles.srv"
   "srv/UpdateBeliefs.srv"
+  "srv/UR16BehaviorTrigger.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"
