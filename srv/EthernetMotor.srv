@@ -1,0 +1,7 @@
+# Request
+bool enable      # true = ON, false = OFF
+uint8 speed      # 0-255 motor speed
+---
+# Response
+bool success     # true if command succeeded
+string message   # status message

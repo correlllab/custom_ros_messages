@@ -22,6 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetHandAngles.srv"
   "srv/UpdateBeliefs.srv"
   "srv/UR16BehaviorTrigger.srv"
+  "srv/EthernetMotor.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"
