@@ -1,0 +1,15 @@
+# Goal - the target position to move to
+float64 target_position_mm  # Target position in user units
+
+---
+
+# Result - returned when action is complete
+bool success             # Whether the movement was successful
+float64 final_position_mm   # Final position reached
+string message          # Status or error message
+
+---
+
+# Feedback - published during execution
+float64 current_position_mm # Current position during movement
+bool is_moving          # Whether motor is currently moving

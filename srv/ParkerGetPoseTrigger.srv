@@ -1,0 +1,3 @@
+---
+bool ismoving
+float64 mm_distance
