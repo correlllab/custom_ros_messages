@@ -11,6 +11,8 @@ find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dummy.msg"            # add .msg files if any
+  "msg/Detection.msg"
+  "msg/DetectionBundle.msg"
   "msg/MotorCmd.msg"
   "msg/MotorCmds.msg"
   "msg/MotorState.msg"
@@ -24,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UR16BehaviorTrigger.srv"
   "srv/EthernetMotor.srv"
   "srv/ParkerGetPoseTrigger.srv"
+  "srv/UnscrewPose.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"
