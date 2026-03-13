@@ -1,3 +1,4 @@
+string part_name
 geometry_msgs/PoseStamped target_pose
 bool visual_servo
 ---

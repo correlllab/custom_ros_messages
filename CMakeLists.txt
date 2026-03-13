@@ -26,7 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UR16BehaviorTrigger.srv"
   "srv/EthernetMotor.srv"
   "srv/ParkerGetPoseTrigger.srv"
-  "srv/UnscrewPose.srv"
+  "srv/RemovePart.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"
