@@ -1,0 +1,12 @@
+# Goal
+bool save_images
+---
+# Result
+bool success
+int32 total_poses
+int32 completed
+int32 skipped
+---
+# Feedback
+int32 points_explored
+int32 total_points

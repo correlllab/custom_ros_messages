@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/NamedConfig.action"
   "action/HandAdaptiveForce.action"
   "action/ParkerGotoPose.action"
+  "action/ScanBattery.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 )
 
