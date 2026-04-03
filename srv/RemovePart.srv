@@ -1,6 +1,7 @@
 string part_name
 geometry_msgs/PoseStamped target_pose
 bool visual_servo
+float32 detection_confidence
 ---
 bool success
 string message
