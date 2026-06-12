@@ -1,0 +1,16 @@
+# Grasp a single door's handle and pull it open.
+# (For a double door, call once per leaf.)
+
+# === Goal ===
+string  target_object              # vision-pipeline query for the handle, e.g. "fridge handle"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+float32 pull_distance              # how far to pull the door open [m] (0 = skill default)
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "pull" | "done"
+float32 progress                   # 0.0 .. 1.0

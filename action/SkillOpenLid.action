@@ -1,0 +1,16 @@
+# Rotate a hinged lid open about its hinge.
+# (Lift-off lids are handled as a pick-and-place task instead.)
+
+# === Goal ===
+string  target_object              # the lid, e.g. "pot lid", "trash can lid"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+float32 open_angle                 # hinge angle to open to [rad] (0 = skill default)
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "open" | "done"
+float32 progress                   # 0.0 .. 1.0

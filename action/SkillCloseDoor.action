@@ -1,0 +1,14 @@
+# Push a single door closed.
+
+# === Goal ===
+string  target_object              # the door/handle, e.g. "fridge", "cabinet door"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "push" | "done"
+float32 progress                   # 0.0 .. 1.0

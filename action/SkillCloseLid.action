@@ -1,0 +1,14 @@
+# Push a hinged lid shut.
+
+# === Goal ===
+string  target_object              # the lid, e.g. "pot lid", "trash can lid"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "close" | "done"
+float32 progress                   # 0.0 .. 1.0

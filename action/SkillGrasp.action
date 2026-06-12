@@ -1,0 +1,15 @@
+# Pick up a named object. Does NOT lift after grasping; the skill computes the
+# approach and grasp width.
+
+# === Goal ===
+string  target_object              # object to grasp, e.g. "mug", "apple", "bottle"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "done"
+float32 progress                   # 0.0 .. 1.0

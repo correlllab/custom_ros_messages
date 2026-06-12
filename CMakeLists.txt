@@ -34,6 +34,17 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/HandAdaptiveForce.action"
   "action/ParkerGotoPose.action"
   "action/ScanBattery.action"
+  "action/SkillCloseDoor.action"
+  "action/SkillOpenDoor.action"
+  "action/SkillCloseLid.action"
+  "action/SkillOpenLid.action"
+  "action/SkillNavigate.action"
+  "action/SkillGrasp.action"
+  "action/SkillPickPlace.action"
+  "action/SkillPress.action"
+  "action/SkillSlideRack.action"
+  "action/SkillTurnLever.action"
+  "action/SkillTwistKnob.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 )
 

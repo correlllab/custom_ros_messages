@@ -1,0 +1,15 @@
+# Slide a rack (dishwasher / oven rack) in or out.
+
+# === Goal ===
+string  target_object              # the rack, e.g. "dishwasher rack", "oven rack"
+string  direction                  # "in" | "out"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "slide" | "done"
+float32 progress                   # 0.0 .. 1.0

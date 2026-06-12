@@ -1,0 +1,14 @@
+# Press a named button. The skill computes the press depth/motion.
+
+# === Goal ===
+string  target_object              # button to press, e.g. "microwave start", "coffee button"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "press" | "done"
+float32 progress                   # 0.0 .. 1.0

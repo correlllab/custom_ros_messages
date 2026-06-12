@@ -1,0 +1,16 @@
+# Turn a lever (e.g. faucet handle) by a given angle in a given direction.
+
+# === Goal ===
+string  target_object              # the lever, e.g. "sink faucet", "faucet handle"
+string  direction                  # rotation sense: "cw" | "ccw"
+float32 angle                      # how far to turn [rad]
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "turn" | "done"
+float32 progress                   # 0.0 .. 1.0

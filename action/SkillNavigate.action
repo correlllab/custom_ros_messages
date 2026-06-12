@@ -1,0 +1,13 @@
+# Drive the base to a named kitchen location (no arm involved).
+
+# === Goal ===
+string  target_object              # named destination, e.g. "sink", "stove", "fridge"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "planning" | "navigating" | "done"
+float32 progress                   # 0.0 .. 1.0

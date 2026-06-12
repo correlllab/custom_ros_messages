@@ -1,0 +1,16 @@
+# Grasp a named object, then place it at a named destination and release.
+# (Internally calls the grasp skill, then carries and places.)
+
+# === Goal ===
+string  target_object              # object to pick, e.g. "mug", "apple"
+string  place_target               # destination, e.g. "sink", "plate", "counter"
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "grasp" | "carry" | "place" | "release" | "done"
+float32 progress                   # 0.0 .. 1.0

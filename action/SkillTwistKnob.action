@@ -1,0 +1,16 @@
+# Twist a knob (e.g. stove burner knob) by a given angle in a given direction.
+
+# === Goal ===
+string  target_object              # the knob, e.g. "stove knob", "front-left burner knob"
+string  direction                  # rotation sense: "cw" | "ccw"
+float32 angle                      # how far to twist [rad]
+string  arm                        # "left" | "right"
+builtin_interfaces/Duration timeout
+---
+# === Result ===
+bool    success
+string  message                    # outcome / failure reason
+---
+# === Feedback ===
+string  phase                      # "detect" | "approach" | "grasp" | "twist" | "done"
+float32 progress                   # 0.0 .. 1.0
