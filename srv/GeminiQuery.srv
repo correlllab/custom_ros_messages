@@ -1,0 +1,7 @@
+# Request: an image and/or a text prompt (at least one required)
+sensor_msgs/CompressedImage image   # empty (data length 0) when no image
+string prompt                       # empty when no text prompt
+---
+string response                     # Gemini's text answer
+bool success
+string message

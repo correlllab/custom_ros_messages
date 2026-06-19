@@ -1,0 +1,12 @@
+# Request: image to segment + a text/concept prompt and/or box exemplars.
+# Backend is SAM3 (text + positive/negative box prompts; no click points).
+# At least one of {text, positive_boxes} must be provided.
+sensor_msgs/CompressedImage image
+float32[] positive_boxes   # foreground box exemplars, flattened groups of 4: [x1,y1,x2,y2, ...] pixel xyxy
+float32[] negative_boxes   # background box exemplars, same flattened format
+string text                # text/concept prompt; empty when none
+---
+sensor_msgs/Image mask     # mono8, 0/255, same HxW as the input image
+float32 score              # confidence of the returned (best) mask
+bool success
+string message

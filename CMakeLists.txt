@@ -28,6 +28,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ParkerGetPoseTrigger.srv"
   "srv/RemovePart.srv"
   "srv/GoHome.srv"
+  "srv/GeminiQuery.srv"
+  "srv/SamSegment.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"
