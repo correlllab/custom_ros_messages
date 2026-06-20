@@ -30,6 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GoHome.srv"
   "srv/GeminiQuery.srv"
   "srv/SamSegment.srv"
+  "srv/GraspGen.srv"
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"

@@ -1,0 +1,13 @@
+# Plan 6-DOF grasps on a segmented object point cloud with GraspGenX.
+# Request: the object's points. header.frame_id is the working frame (e.g. pelvis);
+# returned grasps come back in that same frame.
+sensor_msgs/PointCloud2 object_cloud
+string gripper_name              # empty -> server default
+---
+# Grasps ranked best-first, in object_cloud's frame. Each pose is the GraspGenX
+# gripper-base pose: +Z approaches the object, +X is the finger-closing axis.
+geometry_msgs/PoseStamped[] grasps
+float32[] scores                 # confidence per grasp, same order as `grasps`
+float32 gripper_width            # opening to pre-open the gripper to [m]
+bool success
+string message
