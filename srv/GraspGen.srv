@@ -2,6 +2,10 @@
 # Request: the object's points. header.frame_id is the working frame (e.g. pelvis);
 # returned grasps come back in that same frame.
 sensor_msgs/PointCloud2 object_cloud
+# Optional surrounding-scene cloud (obstacles), same frame as object_cloud. When
+# non-empty the server drops grasps whose gripper would collide with it (the
+# target object's own points are excluded first). Leave empty to skip filtering.
+sensor_msgs/PointCloud2 scene_cloud
 string gripper_name              # empty -> server default
 ---
 # Grasps ranked best-first, in object_cloud's frame. Each pose is the GraspGenX
