@@ -7,6 +7,10 @@ sensor_msgs/PointCloud2 object_cloud
 # target object's own points are excluded first). Leave empty to skip filtering.
 sensor_msgs/PointCloud2 scene_cloud
 string gripper_name              # empty -> server default
+# Which arm will execute the grasp: 'left' | 'right' (empty -> no lateral cut).
+# Selects the approach-direction sector the server keeps, in the cloud frame
+# (+x forward, +y left): right -> forward..+y(left), left -> forward..-y(right).
+string arm
 ---
 # Grasps ranked best-first, in object_cloud's frame. Each pose is the GraspGenX
 # gripper-base pose: +Z approaches the object, +X is the finger-closing axis.
