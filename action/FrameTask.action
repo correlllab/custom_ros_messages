@@ -1,4 +1,5 @@
 # Goal
+bool plan
 string[] frame_names
 geometry_msgs/Pose[] frame_targets
 builtin_interfaces/Duration duration

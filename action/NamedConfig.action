@@ -1,4 +1,5 @@
 # Goal
+bool plan
 string config_name
 builtin_interfaces/Duration duration
 ---

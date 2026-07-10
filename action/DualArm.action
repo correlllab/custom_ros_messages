@@ -1,4 +1,5 @@
 # Goal in SE(3)
+bool plan
 geometry_msgs/Pose left_target
 geometry_msgs/Pose right_target
 builtin_interfaces/Duration duration
