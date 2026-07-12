@@ -1,0 +1,21 @@
+# Autonomous frontier-based exploration: drive the base to successive frontiers
+# of the slam_toolbox /map (FREE cells touching UNKNOWN space) via nav2, until
+# the map is fully explored or the goal timeout is hit. Needs nav2 + slam_toolbox
+# up and the robot in walk mode so nav2's /cmd_vel is followed.
+
+# === Goal ===
+int32   min_frontier_cells        # ignore frontier clusters smaller than this (0 -> default 6)
+float32 blacklist_radius          # m; blacklist a failed goal within this radius (0 -> default 0.6)
+float32 min_goal_distance         # m; skip frontiers closer than this to the robot (0 -> default 0.7)
+float32 goal_timeout              # s; cancel a single nav goal after this (0 -> default 120)
+builtin_interfaces/Duration timeout   # overall exploration budget (0 -> node default)
+---
+# === Result ===
+bool    success
+string  message                   # outcome / failure reason
+int32   goals_reached             # frontiers successfully reached
+---
+# === Feedback ===
+string  phase                     # "exploring" | "navigating" | "done"
+float32 progress                  # 0.0 .. 1.0 (best-effort)
+int32   frontiers_remaining       # candidate frontiers at the last tick
