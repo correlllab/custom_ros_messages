@@ -1,4 +1,4 @@
-# SetHandtAngles.srv
+# SetHandAngles.srv
 float64[6] angles
 string hand # left, right, both
 ---
