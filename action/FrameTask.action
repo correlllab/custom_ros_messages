@@ -3,6 +3,8 @@ bool plan
 string[] frame_names
 geometry_msgs/Pose[] frame_targets
 builtin_interfaces/Duration duration
+# move the arm at roughly 1/4 speed when true (default false = full speed)
+bool slow_mode
 ---
 # Result
 bool success
