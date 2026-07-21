@@ -3,8 +3,11 @@
 
 # === Goal ===
 string  target_object              # object to grasp, e.g. "mug", "apple", "bottle"
-string  arm                        # "left" | "right"
-builtin_interfaces/Duration timeout
+string  arm                        # "left" | "right"; "" or "none" = auto (arm closest to the object)
+bool    top_down                   # optional: skip graspgen and grasp from above, steeply pitched down onto the object
+float32 min_downward_pitch_deg     # optional (>0): keep only grasps approaching at least this far below horizontal
+bool    visual_servo               # optional: align on the object with the hand camera at the pre-grasp, then close there instead of descending
+builtin_interfaces/Duration timeout   # 0 / omitted = no deadline, run to completion
 ---
 # === Result ===
 bool    success
