@@ -49,6 +49,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/SkillTurnLever.action"
   "action/SkillTwistKnob.action"
   "action/SkillFrontierExplore.action"
+  "action/SkillRetrieveMemory.action"
   DEPENDENCIES std_msgs sensor_msgs builtin_interfaces geometry_msgs
 )
 
