@@ -4,7 +4,9 @@
 # === Goal ===
 string  target_object              # object to pick, e.g. "mug", "apple"
 string  place_target               # destination, e.g. "sink", "plate", "counter"
-string  arm                        # "left" | "right"
+string  arm                        # "left" | "right"; "" or "none" = auto (arm closest to the object)
+bool    top_down                   # optional: grasp the pick object from above (forwarded to /skill/grasp)
+bool    visual_servo               # optional: hand-camera align before closing (forwarded to /skill/grasp)
 builtin_interfaces/Duration timeout
 ---
 # === Result ===
