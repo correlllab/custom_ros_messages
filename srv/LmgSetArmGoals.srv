@@ -1,0 +1,9 @@
+# lmg_deploy marl_deploy_node ~/set_arm_goals: the left and right wrist goals, left_wrist_yaw_link and
+# right_wrist_yaw_link poses in the pelvis frame (x forward, y left, z up; orientation a unit quaternion). In arm mode
+# they apply at once, in the pelvis frame of that moment; while walking they are kept for the next switch to arm mode
+# (~/set_mode, LmgSetMode) and taken in the pelvis frame of the switch. Either way they then stay fixed in the world.
+geometry_msgs/Pose left
+geometry_msgs/Pose right
+---
+bool success
+string message

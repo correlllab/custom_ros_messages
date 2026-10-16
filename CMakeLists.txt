@@ -31,6 +31,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GeminiQuery.srv"
   "srv/SamSegment.srv"
   "srv/GraspGen.srv"
+  "srv/LmgSetMode.srv"        # lmg_deploy marl_deploy_node ~/set_mode
+  "srv/LmgSetArmGoals.srv"    # lmg_deploy marl_deploy_node ~/set_arm_goals
   "action/DualArm.action"
   "action/FrameTask.action"
   "action/NamedConfig.action"

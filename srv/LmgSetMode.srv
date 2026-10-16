@@ -1,0 +1,10 @@
+# lmg_deploy marl_deploy_node ~/set_mode: switch between walking and an arm goal.
+#   walk  the legs follow /cmd_vel, the arms hold their rest pose (the mode the node starts in)
+#   arm   the velocity command is zero and both wrists reach the goals of ~/set_arm_goals (LmgSetArmGoals; the rest
+#         pose until some are set), taken in the pelvis frame at the switch and fixed in the world from then on
+string WALK=walk
+string ARM=arm
+string mode
+---
+bool success
+string message
