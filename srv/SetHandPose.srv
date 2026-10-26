@@ -1,0 +1,12 @@
+# Move one Dex3-1 hand to a joint-space pose. Served once per hand, e.g.
+# /left/hand/set_pose and /right/hand/set_pose.
+#
+# positions uses the Dex3 HandCmd_ motor order:
+#   thumb_0, thumb_1, thumb_2, middle_0, middle_1, index_0, index_1
+# Left and right close along opposite joint signs (see
+# leprechaun_g1/assets/README.md), so the same pose is not the same numbers.
+float64[] positions  # 7 joint targets, rad
+float64 duration     # s to interpolate from the current pose; 0 = go directly
+---
+bool success
+string message
