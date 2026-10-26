@@ -1,0 +1,25 @@
+# Query the robot's persistent visual memory. Capturing and indexing run
+# continuously in the spatial-memory node; this action only performs retrieval.
+
+# === Goal ===
+string query                         # text such as "find the current mug"
+int32 top_k                          # number of results (0 -> node default)
+bool rerank                          # request optional Gemini reranking
+string time_from                     # optional HH:MM:SS or ISO8601 lower bound
+string time_to                       # optional HH:MM:SS or ISO8601 upper bound
+---
+# === Result ===
+bool success
+string message
+string[] memory_ids
+string[] image_paths
+geometry_msgs/Pose2D[] robot_poses   # observation poses, not oracle object poses
+float32[] scores                     # VLM confidence, or FAISS cosine on fallback
+string[] timestamps
+bool rerank_attempted
+bool rerank_valid
+string fallback_reason
+---
+# === Feedback ===
+string phase                         # "recall" | "rerank" | "done"
+float32 progress                     # 0.0 .. 1.0
